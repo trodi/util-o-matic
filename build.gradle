@@ -1,4 +1,5 @@
 apply plugin: 'scala'
+apply plugin: 'application'
 
 repositories {
 	mavenCentral()
@@ -8,3 +9,5 @@ dependencies {
 	compile 'org.scala-lang:scala-library:2.10.2'
 	compile 'com.github.pathikrit:dijon_2.10:0.2.2'
 }
+
+mainClassName = "main.scala.ScrapeMovieInfo"

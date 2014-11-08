@@ -11,7 +11,7 @@ import com.github.pathikrit.dijon._
  * @author tmckinnon
  *
  */
-object scrapeMoiveInfo {
+object ScrapeMovieInfo {
   
   /** Using the open movie DB API to get info. */
   val omdbUrl = "http://www.omdbapi.com/?i=&t=";
@@ -21,6 +21,7 @@ object scrapeMoiveInfo {
    *    0 - Absolute path to file with movie title list (each line is a new title)
    */
   def main(args: Array[String]) {
+    println("Scrape movie info [Starting]...")
     val movies = readMovieList(args(0))
     movies.map(x => handleMovie(x))
   }
